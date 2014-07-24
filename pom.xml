@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ 
+ <parent>
+		<artifactId>ngbf-dev-process</artifactId>
+		<groupId>com.kingstar.ngbf</groupId>
+		<version>2.3.0.0</version>
+	</parent>
+ 
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.coo</groupId>
+  <artifactId>coo-d-lyfcb</artifactId>
+  <version>0.1.0.0</version>
+  
+  <properties>
+<!-- 		<process.class.path>com.coo.d.vote.MainProcess</process.class.path> -->
+		<!-- Basic NGBF jars -->
+		<ngbf-u-base.version>2.3.7.0</ngbf-u-base.version>
+		<ngbf-s-ntp.version>2.3.3.0</ngbf-s-ntp.version>
+		<ngbf-s-util.version>2.3.0.0</ngbf-s-util.version>
+		
+		<!-- lyfcb jars -->
+		<coo-u-lyfcb.version>0.1.0.0</coo-u-lyfcb.version>
+		<!-- Ad NGBF jars -->
+		<ngbf-s-mongo.version>2.2.1.0</ngbf-s-mongo.version>
+	</properties>
+  
+  <dependencies>
+  
+  <dependency>
+			<groupId>com.coo</groupId>
+			<artifactId>coo-u-lyfcb</artifactId>
+			<version>${coo-u-lyfcb.version}</version>
+			<scope>compile</scope>
+		</dependency>
+  	
+  	<!-- reference NGBF -->
+		<dependency>
+			<groupId>com.kingstar.ngbf</groupId>
+			<artifactId>ngbf-s-mongo</artifactId>
+			<version>${ngbf-s-mongo.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		
+		
+  </dependencies>
+  
+</project>
